@@ -1,6 +1,13 @@
 /* font-family: 'Inter', sans-serif;
 font-family: 'Lora', serif; */
 
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --brown: #C96B41;
+    --beige: #EEDFD4;
+}
+
 p {
     font-family: 'Inter', sans-serif;
 }
