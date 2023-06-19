@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Article } from 'src/app/mocks/mock';
+import { CatalogPageService } from 'src/app/services/catalog-page.service';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+ 
 
 }

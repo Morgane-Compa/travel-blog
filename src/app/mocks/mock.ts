@@ -23,7 +23,7 @@ export const ARTICLES : Article[] = [
     ville : "Vandavell La cité libre",
     dateDepart : "13/07/2022",
     dateRetour : "17/07/2022",
-    imageP : "src/assets/img/kando.png",
+    imageP : "srcassetsimgkando.png",
     imageS : ["src/assets/img/sea-g251f29be9_1920 2.png", 
               "src/assets/img/sea-g251f29be9_1920 3.png", 
               "src/assets/img/sea-g251f29be9_1920 4.png", 
