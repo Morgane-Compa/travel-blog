@@ -1,1 +1,17 @@
-<p>other-article works!</p>
+<ng-container *ngFor="let item of articles">
+    <div class="ArticleCube" *ngIf= !item.top>
+        <a routerLink="/article/{{item.id}}">
+            <img src="{{item.imageP}}" alt="image de {{item.ville}}">
+            <div class="voyagesInfos">
+                <div class="Emplacement">
+                    <h3>{{item.pays}}</h3>
+                    <p>{{item.ville}}</p>
+                </div>
+                <div class="dates">
+                    <p>Du {{item.dateDepart}}</p>
+                    <p>Au {{item.dateRetour}}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</ng-container>
