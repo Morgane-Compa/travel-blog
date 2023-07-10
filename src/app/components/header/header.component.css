@@ -1,12 +1,16 @@
 header {
-    height: 70px;
-    width: 100%;
     background-color: var(--beige);
     display: flex;
+}
+
+/* CSS header version phone */
+.phone {
+    height: 70px;
+    width: 100%;
     align-items: center;
 }
 
-.title {
+.phone .title {
     height: 100%;
     width: 70%;
     border-right: 1px solid black;
@@ -15,16 +19,64 @@ header {
     padding-left: 5%;
 }
 
-h1 {
+.phone h1 {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;  
 }
 
-.empty {
+
+
+
+
+/* CSS header version version desktop */
+.desktop {
+    height: 100%;
+    width: 154px;
+    margin: 0;
     display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
+.desktop .title{
+    position: relative;
+    height: 374px;
+}
+
+.desktop .title h1 {
+    position: absolute;
+    top: 160px;
+    left: -50px;
+    white-space: nowrap;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    transform: rotate(270deg);
+}
+
+.desktop .empty {
+    height: 466px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.desktop .api {
+    flex: 1;
+}
+
+
+
 @media (min-width: 1000px) {
+    
+    .phone {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
 
 }
