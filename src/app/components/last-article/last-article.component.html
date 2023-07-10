@@ -1,12 +1,14 @@
-<a class="backgroud-image" *ngFor="let item of articles">
-    <div class="image-footer">
-        <div class="title">
-            <h3>{{item.pays}}</h3>
-            <p>{{item.ville}}</p>
+<ng-container *ngFor="let item of articles">
+    <a class="backgroud-image" *ngIf="item.top">
+        <div class="image-footer">
+            <div class="title">
+                <h3>{{item.pays}}</h3>
+                <p>{{item.ville}}</p>
+            </div>
+            <div class="dates">
+                <p>Du {{item.dateDepart}}</p>
+                <p>Au {{item.dateRetour}}</p>
+            </div>
         </div>
-        <div class="dates">
-            <p>Du {{item.dateDepart}}</p>
-            <p>Au {{item.dateRetour}}</p>
-        </div>
-    </div>
-</a>
+    </a>
+</ng-container>

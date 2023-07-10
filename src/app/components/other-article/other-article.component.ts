@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Article } from 'src/app/mocks/mock';
+import { CatalogPageService } from 'src/app/services/catalog-page.service';
 
 
 @Component({
@@ -7,5 +9,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./other-article.component.css']
 })
 export class OtherArticleComponent {
+
+  articles: Article[] = [];
+
+  constructor(private catalogService: CatalogPageService) {}
+
+  ngOnInit() {
+    this.articles = this.catalogService.getArticles()
+  }
 
 }
