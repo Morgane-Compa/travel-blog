@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-for-more',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./for-more.component.css']
 })
 export class ForMoreComponent {
+
+  @Input() photos: string[] = [];
 
 }

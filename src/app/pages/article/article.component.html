@@ -1,6 +1,31 @@
 <div *ngIf="article">
     <h2>{{article.pays}} - {{article.ville}}</h2>
     <p>{{article.dateDepart}} - {{article.dateRetour}}</p>
+    <img src="{{article.imageP}}" alt="image de {{article.ville}}">
 </div>
 
+
+<!-- J'appelle mes composant et je donne des valeurs à mes inputs -->
+<app-the-travel
+[title]="'Le voyage'"
+[text]="article!.texteVoyage"
+></app-the-travel>
+
+<app-opinion
+[pointspositif]="article!.positif"
+[pointsnegatif]="article!.negatif"
+[conseils]="article!.conseils"
+></app-opinion>
+
+<app-the-travel
+[title]="'En résumé'"
+[text]="article!.resume"
+></app-the-travel>
+
+<app-for-more
+[photos]="article!.imageS"
+></app-for-more>
+
+<app-return-button>
+</app-return-button>
 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-the-travel',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./the-travel.component.css']
 })
 export class TheTravelComponent {
+
+  // Je créer des input, vide pour le moment car ils recevront leur données quand je déclarerai le composant enfant dans le parent
+  @Input() title!: string;
+  @Input() text!: string;
 
 }
