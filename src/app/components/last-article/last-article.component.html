@@ -1,5 +1,5 @@
 <ng-container *ngFor="let item of articles">
-    <a class="backgroud-image" *ngIf="item.top">
+    <a routerLink="/article/{{item.id}}" class="backgroud-image" *ngIf="item.top">
         <div class="image-footer">
             <div class="title">
                 <h3>{{item.pays}}</h3>

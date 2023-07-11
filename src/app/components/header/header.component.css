@@ -65,6 +65,7 @@ header {
 
 .desktop .api {
     flex: 1;
+    min-width: 1757px;
 }
 
 
@@ -77,6 +78,7 @@ header {
 
     .desktop {
         display: block;
+        display: flex;
     }
 
 }
