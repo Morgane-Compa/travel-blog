@@ -1,1 +1,21 @@
-<p>opinion works!</p>
+<!-- Mon titre -->
+<h3>Notre avis</h3>
+
+<!-- Mes inputs -->
+<!-- le ngIf est la pour ne faire apparaitre la liste QUE si il y a des valeurs dedans -->
+<h4 class="margin" *ngIf="pointspositif.length > 0">Les plus</h4>
+<!-- J'appelle la liste de mon mock -->
+<ul *ngFor="let item of pointspositif">
+    <li>{{item}}</li>
+</ul>
+
+<!-- Je refait pareil pour les autres listes -->
+<h4 class="margin" *ngIf="pointsnegatif.length > 0">Les plus</h4>
+<ul *ngFor="let item of pointsnegatif">
+    <li>{{item}}</li>
+</ul>
+
+<h4 class="margin" *ngIf="conseils.length > 0">Les plus</h4>
+<ul *ngFor="let item of conseils">
+    <li>{{item}}</li>
+</ul>

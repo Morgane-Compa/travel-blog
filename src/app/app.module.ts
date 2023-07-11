@@ -14,6 +14,7 @@ import { TheTravelComponent } from './components/the-travel/the-travel.component
 import { OpinionComponent } from './components/opinion/opinion.component';
 import { ForMoreComponent } from './components/for-more/for-more.component';
 import { HeadArticleComponent } from './components/head-article/head-article.component';
+import { InShortComponent } from './components/in-short/in-short.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HeadArticleComponent } from './components/head-article/head-article.com
     TheTravelComponent,
     OpinionComponent,
     ForMoreComponent,
-    HeadArticleComponent
+    HeadArticleComponent,
+    InShortComponent
   ],
   imports: [
     BrowserModule,

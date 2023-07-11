@@ -1,7 +1,7 @@
 header {
     background-color: var(--beige);
     display: flex;
-}
+} 
 
 /* CSS header version phone */
 .phone {
@@ -48,7 +48,7 @@ header {
 
 .desktop .title h1 {
     position: absolute;
-    top: 160px;
+    top: 40%;
     left: -50px;
     white-space: nowrap;
     font-size: 30px;
@@ -81,4 +81,4 @@ header {
         display: flex;
     }
 
-}
+} 

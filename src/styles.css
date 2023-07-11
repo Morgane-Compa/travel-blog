@@ -10,32 +10,35 @@ font-family: 'Lora', serif; */
 
 * {
     box-sizing: border-box;
-  }
-  
-  html,
-  body {
-      margin: 0;
-      padding: 0;
-      /* height: 100vh;
-      max-height: 100vh; */
-      display: flex;
-      flex-direction: column;
-  }
-  
-  app-root {
-      display: flex;
-      flex-direction: column;
-  }
-  
-  main {
-      overflow-y: scroll;
-  }
+}
 
-h1, p {
+html,
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+app-root {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1,
+p {
     font-family: 'Inter', sans-serif;
 }
 
-h2, h3 {
+h2,
+h3 {
     font-family: 'Lora', serif;
 }
 
@@ -43,7 +46,6 @@ h2, h3 {
 @media (min-width: 1000px) {
     main {
         position: relative;
-        left: 306px;
+        left: 10%;
     }
-
 }
