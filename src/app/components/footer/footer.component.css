@@ -10,3 +10,10 @@ footer p {
     font-family: 'Lora', serif;
     font-size: 24px;
 }
+
+@media (min-width: 1000px) {
+    footer {
+        position: absolute;
+        left: 154px;
+    }
+}

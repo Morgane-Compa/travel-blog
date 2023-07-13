@@ -1,14 +1,22 @@
-<ng-container *ngFor="let item of articles">
-    <a routerLink="/article/{{item.id}}" class="backgroud-image" *ngIf="item.top">
-        <div class="image-footer">
-            <div class="title">
-                <h3>{{item.pays}}</h3>
-                <p>{{item.ville}}</p>
+<section class="last-article flex">
+    <ng-container *ngFor="let item of articles">
+
+        <a routerLink="/article/{{item.id}}" class="backgroud-image flex" *ngIf="item.top">
+
+            <!-- L'image qui me servira de fond -->
+            <img src="{{item.imageP}}" alt="Image de {{item.ville}}" class="image">
+            <!-- LA div qui fera le footer de larticle -->
+            <div class="image-footer flex">
+                
+                <div class="title flex">
+                    <p>{{item.pays}} - {{item.ville}}</p>
+                    <!-- <p>{{item.ville}}</p> -->
+                </div>
+                <div class="dates flex">
+                    <p>{{item.dateDepart}} · {{item.dateRetour}}</p>
+                </div>
+
             </div>
-            <div class="dates">
-                <p>Du {{item.dateDepart}}</p>
-                <p>Au {{item.dateRetour}}</p>
-            </div>
-        </div>
-    </a>
-</ng-container>
+        </a>
+    </ng-container>
+</section>
