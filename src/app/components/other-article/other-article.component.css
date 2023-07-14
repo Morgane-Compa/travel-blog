@@ -1,0 +1,105 @@
+/* Je créer une classe flex comme ça j'ai pas besoin de mettre display flex partout */
+.flex {
+    display: flex;
+}
+
+.other-article {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.ArticleCube {
+    padding-bottom: 44px;
+    width: 89%;
+}
+
+.backgroud-image {
+    flex-direction: column;
+    width: 100%;
+    text-decoration: none;
+}
+
+.image {
+    width: 100%;
+    height: 283px;
+    object-fit: cover;
+}
+
+.image-footer {
+    background-color: var(--brown);
+    color: white;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+}
+
+.title,
+.dates {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 16px;
+}
+
+P {
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    border-right: 1px solid white;
+    width: 60%;
+}
+
+.country {
+    font-size: 20px;
+    font-family: 'Lora', serif;
+}
+
+.town {
+    font-size: 14px;
+}
+
+.dates {
+    font-size: 12px;
+    padding-left: 12%;
+}
+
+@media (min-width: 1000px) {
+
+    .other-article {
+        width: 89%;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .ArticleCube {
+        width: 500px;
+        height: 406px;
+        margin: 20px;
+    }
+
+    /* .image {
+        margin-top: 114px;
+        height: 686px;
+        width: 89%;
+        object-fit: cover;
+    }
+
+    .image-footer {
+        height: 118px;
+        max-width: 89%;
+    }
+
+    .title {
+        font-size: 30px;
+        width: 80%;
+    }
+
+    .dates {
+        font-size: 16px;
+        justify-content: center;
+    } */
+}

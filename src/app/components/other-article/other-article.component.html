@@ -1,17 +1,26 @@
-<ng-container *ngFor="let item of articles">
-    <div class="ArticleCube" *ngIf= !item.top>
-        <a routerLink="/article/{{item.id}}">
-            <img src="{{item.imageP}}" alt="image de {{item.ville}}">
-            <div class="voyagesInfos">
-                <div class="Emplacement">
-                    <h3>{{item.pays}}</h3>
-                    <p>{{item.ville}}</p>
+<section class="other-article flex">
+    <ng-container *ngFor="let item of articles">
+        <!-- Je génère la boucle pour faire apparaitre tout les article -->
+        <div class="ArticleCube flex" *ngIf= !item.top>
+
+            <a routerLink="/article/{{item.id}}" class="backgroud-image flex">
+                <!-- Mon image -->
+                <img src="{{item.imageP}}" alt="image de {{item.ville}}" class="image flex">
+
+                <!-- la div "footer" de l'article -->
+                <div class="image-footer flex">
+                    <!-- je sépare la div en 2 -->
+                    <div class="title flex">
+                        <p class="country">{{item.pays}}</p>
+                        <p class="town">{{item.ville}}</p>
+                    </div>
+                    <div class="dates flex">
+                        <p>Du {{item.dateDepart}}</p>
+                        <p>Au {{item.dateRetour}}</p>
+                    </div>
+
                 </div>
-                <div class="dates">
-                    <p>Du {{item.dateDepart}}</p>
-                    <p>Au {{item.dateRetour}}</p>
-                </div>
-            </div>
-        </a>
-    </div>
-</ng-container>
+            </a>
+        </div>
+    </ng-container>
+</section>
