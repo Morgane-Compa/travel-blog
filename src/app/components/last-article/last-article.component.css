@@ -1,3 +1,4 @@
+/* Je créer une classe flex comme ça j'ai pas besoin de mettre display flex partout */
 .flex {
     display: flex;
 }
@@ -7,6 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 110px;
 }
  
 .backgroud-image {
@@ -16,8 +18,9 @@
 }
 
 .image {
+    height: 350px;
     width: 100%;
-    margin-top: 114px;
+    object-fit: cover;
 }
 
 .image-footer {
@@ -47,14 +50,20 @@
 }
 
 @media (min-width: 1000px) {
+    .last-article {
+        margin-top: 0;
+    }
 
     .image {
+        margin-top: 114px;
+        height: 686px;
+        width: 89%;
         object-fit: cover;
     }
 
     .image-footer {
         height: 118px;
-        max-width: 100%;
+        max-width: 89%;
     }
 
     .title {
