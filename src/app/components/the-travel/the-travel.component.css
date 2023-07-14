@@ -1,0 +1,22 @@
+section {
+    width: 100%;
+}
+
+p {
+    background-color: var(--brown);
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.78px;
+    padding: 23px 21px;
+    white-space: pre-wrap;
+}
+
+
+@media (min-width: 768px) {
+    
+    section {
+        margin: 115px 100px 0 7%;
+        width: 89%;
+    }
+}

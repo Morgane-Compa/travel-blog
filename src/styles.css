@@ -40,6 +40,10 @@ app-home {
     width: 100%;
 }
 
+/* app-article {
+    width: 100vw;
+} */
+
 h1,
 p {
     font-family: 'Inter', sans-serif;
