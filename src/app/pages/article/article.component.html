@@ -1,11 +1,13 @@
-<div *ngIf="article">
-    <h2>{{article.pays}} - {{article.ville}}</h2>
-    <p>{{article.dateDepart}} - {{article.dateRetour}}</p>
-    <img src="{{article.imageP}}" alt="image de {{article.ville}}">
-</div>
+<section>
+    <div *ngIf="article" class="article-presentation">
+        <h2>{{article.pays}} - {{article.ville}}</h2>
+        <p>{{article.dateDepart}} - {{article.dateRetour}}</p>
+        <img src="{{article.imageP}}" alt="image de {{article.ville}}" class="image">
+    </div>
+    
+</section>
 
-
-<!-- J'appelle mes composant et je donne des valeurs à mes inputs -->
+<!-- J'appelle mes composant et je donne des valeurs à mes inputs-->
 <app-the-travel
 [title]="'Le voyage'"
 [text]="article!.texteVoyage"

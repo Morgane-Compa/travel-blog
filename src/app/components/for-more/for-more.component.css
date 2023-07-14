@@ -1,0 +1,30 @@
+section {
+    width: 100%;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image {
+    width: 351px;
+    height: 351px;
+    object-fit: cover;
+    margin-bottom: 19px;
+
+}
+
+@media (min-width: 768px) {
+    
+    section {
+    margin: 115px 100px 0 7%;
+    }
+
+    img {
+        height: 320px;
+        width: 320px;
+        margin-right: 35px;
+    }
+} 

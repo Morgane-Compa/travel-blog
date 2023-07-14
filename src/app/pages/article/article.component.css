@@ -1,5 +1,11 @@
+section {
+    display: flex;
+    justify-content: center;
+    width: 89%;
+}
+
 @media (min-width: 1000px) {
-    body {
-        margin-left: 100px;
+    section {
+        width: 100%;
     }
 }
