@@ -1,11 +1,33 @@
 section {
     display: flex;
     justify-content: center;
+    width: 100%;
+}
+
+.article-presentation {
+    width: 100%;
+}
+
+.image {
     width: 89%;
+    height: 350px;
+    object-fit: cover;
+}
+
+h2 {
+    margin-bottom: 0;
 }
 
 @media (min-width: 1000px) {
     section {
         width: 100%;
+        margin: 69px 100px 0 7%;
+    }
+
+    .image {
+        margin-top: 44px;
+        height: 686px;
+        width: 89%;
+        object-fit: cover;
     }
 }
