@@ -16,7 +16,7 @@ p {
 @media (min-width: 1000px) {
     
     section {
-        margin: 115px 100px 0 7%;
-        width: 89%;
+        /* margin: 69px 100px 0 7%; */
+        width: 90%;
     }
 }
