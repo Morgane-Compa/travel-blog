@@ -13,6 +13,7 @@ import { ReturnButtonComponent } from './components/return-button/return-button.
 import { TheTravelComponent } from './components/the-travel/the-travel.component';
 import { OpinionComponent } from './components/opinion/opinion.component';
 import { ForMoreComponent } from './components/for-more/for-more.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -27,11 +28,12 @@ import { ForMoreComponent } from './components/for-more/for-more.component';
     ReturnButtonComponent,
     TheTravelComponent,
     OpinionComponent,
-    ForMoreComponent
+    ForMoreComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
